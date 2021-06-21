@@ -3,13 +3,15 @@ package com.javaex.practice;
 public class Ex08 {
 
 	public static void main(String[] args) {
-		
-		for(int A=2; A<10; A++) {
-			for(int B=1; B<10; B++) {
-				System.out.print(A+ "*" +B+ "=" +A*B+"\t");
-			System.out.println();
+
+		for (int A = 1; A <= 9; A++) {
+			for (int B = 2; B <= 9; B++) {
+				System.out.print(B + "*" + A + "=" + B * A+"\t");
 			}
+
+			System.out.println();
 		}
+
 	}
 
 }

@@ -2,23 +2,26 @@ package com.javaex.practice;
 
 import java.util.Scanner;
 
-public class Ex07 {
+public class Ex10 {
 
 	public static void main(String[] args) {
 		
+		int max=0, num;
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("숫자를 입력하세요");
-		int num = sc.nextInt();
 		
-		for(int i=1; i<=num; i++){
-			for(int j=1; j<=i; j++){  // for문을 2번써서 가로 세로 길이를 둘다 늘린다.
-				System.out.print(i);
+		for(int i=0; i<5; i++) {
+			System.out.print("숫자 : ");
+			num = sc.nextInt();
+			if (max < num) {
+				max = num;
 			}
-			System.out.println("");
 		}
-		
+		System.out.println("최대값은 " +max+ "입니다.");
 		
 		sc.close();
 	}
 
 }
+
